@@ -22,4 +22,13 @@ class TestNode(unittest.TestCase):
 
         assert node2.next_node is self.node_5
 
+class TestStack(unittest.TestCase):
+    """Тестируем класс Stack"""
 
+
+    def test_stack_pushing(self):
+        """Тестируем, что данные ложатся в Stack"""
+        stack = Stack()
+        stack.push('data1')
+
+        assert print(stack.top.data) is stack.push('data1')
