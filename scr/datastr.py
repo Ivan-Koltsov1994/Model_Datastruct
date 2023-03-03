@@ -15,3 +15,11 @@ class Stack:
         new_node.next_node = self.top
         self.top = new_node
 
+    def pop(self):
+        """ Метод удаляет данные из СТЭКа """
+        remove = self.top
+        self.top = self.top.next_node
+        return remove
+
+
+

@@ -32,3 +32,12 @@ class TestStack(unittest.TestCase):
         stack.push('data1')
 
         assert print(stack.top.data) is stack.push('data1')
+
+    def test_stack_pop(self):
+        """Тестируем, что данные удаляются из CТЭКА"""
+        stack = Stack()
+        stack.push('data1')
+        stack.push('data2')
+        stack.pop()
+
+        assert print(stack.top.data) is stack.push('data1')
