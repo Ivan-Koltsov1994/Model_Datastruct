@@ -7,6 +7,7 @@ class Node:
 
 
 class Stack:
+    """ Класс для работы с типом данных Stack """
     def __init__(self):
         self.top = None
 
