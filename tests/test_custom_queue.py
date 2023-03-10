@@ -19,3 +19,10 @@ class TestQueue(unittest.TestCase):
         self.queue.enqueue(6)
         assert self.queue.head.data == 5
         assert self.queue.tail.data == 6
+
+
+    def test_dequeue(self):
+        """Тестируем метод dequeue"""
+        self.queue.enqueue('data1')
+        self.queue.enqueue('data2')
+        assert self.queue.dequeue() == 'data1'
