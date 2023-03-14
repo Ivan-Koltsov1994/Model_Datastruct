@@ -2,7 +2,7 @@ from scr.stack import Node
 
 
 class Queue:
-    """ Класс для работы с структурой данных Queue"""
+    """ Класс для работы со структурой данных Queue"""
 
     def __init__(self):
         self.head = None
@@ -19,7 +19,7 @@ class Queue:
             self.tail = new_node
 
     def dequeue(self):
-        """ Метод удаляет из  крайний левый элемент данные из Queue """
+        """ Метод удаляет крайний левый элемент данные из Queue """
         if self.head is None:
             return None
         dequeue_element = self.head
